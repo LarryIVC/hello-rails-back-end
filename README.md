@@ -57,6 +57,11 @@
 - [⭐️ Setup Rails app ]
 - [⭐️ Setup Rails API ]
 
+This API has the following endpoint: 
+  - [⭐️ GET /api/random_greeting](#get-random-greeting)
+Also this is consumed by the Hello-React-Front-End app, is in the next link
+[https://github.com/LarryIVC/hello-react-front-end](https://github.com/LarryIVC/hello-react-front-end)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -119,12 +124,12 @@ To run the project, execute the following command:
 Example command:
 
 ```sh
-  rails s
+  rails s -p 3001
 ```
 or
 
 ```sh
-  rails server
+  rails server -p 3001
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
