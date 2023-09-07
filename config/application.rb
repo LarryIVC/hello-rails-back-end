@@ -25,3 +25,11 @@ module HelloRailsBackEnd
     config.api_only = true
   end
 end
+
+# Configuración de CORS fuera de la clase HelloRailsBackEnd::Application
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins 'http://localhost:3000'
+    resource '/api/*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options]
+  end
+end
